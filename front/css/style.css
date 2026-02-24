@@ -185,7 +185,8 @@ figure {
     line-height: normal;
 }
 
-.detailoeuvre article p {
+.detailoeuvre article p,
+aside p {
     color: #000;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 16px;
