@@ -5,7 +5,7 @@ async function init(){
 init()
 
 async function getDatas(){
-    const req = await fetch('http://localhost:3000/api/products')
+    const req = await fetch('https://geniarthub.onrender.com/api/products')
     return await req.json()
 }
 

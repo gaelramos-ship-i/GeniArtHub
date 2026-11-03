@@ -8,7 +8,7 @@ if (panier.length === 0) {
 // On créer une fonction asynchrone qui va parcourir tous les éléments du panier et faire la correlation avec les id et les formats pour afficher les prix et les images
 function displayCart() {
     panier.forEach(async el => {
-        const req = await fetch(`http://localhost:3000/api/products/${el.id}`)
+        const req = await fetch(`https://geniarthub.onrender.com/api/products/${el.id}`)
         const datas = await req.json()
 
         // On parcours les données en récupérant : l'id, le format, la quantité, le prix et l'image

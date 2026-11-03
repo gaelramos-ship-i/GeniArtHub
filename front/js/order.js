@@ -55,7 +55,7 @@ form.addEventListener('submit', (e) => {
 
 // Une fonction asynchrone qui permet d'envoyer le formulaire
 async function sendForm(contact, products) {
-    const response = await fetch('http://localhost:3000/api/products/order', {
+    const response = await fetch('https://geniarthub.onrender.com/api/products/order', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
